@@ -9,7 +9,10 @@ import { processSteps } from "@/constants/constants";
 
 export default function About() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 md:px-16 py-16 gap-16">
+    <section
+      className="min-h-screen flex flex-col items-center justify-center px-6 md:px-16 py-16 gap-16"
+      id="about"
+    >
       {/* Top Section: Profile + Info */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full max-w-5xl">
         {/* Left: Profile Image */}

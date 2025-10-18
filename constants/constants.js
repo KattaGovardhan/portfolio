@@ -1,4 +1,4 @@
-import { Home, User, Code, Folder, Settings, Mail } from "lucide-react";
+import { Home, User, Code, Folder, Settings, Mail, Smartphone, Laptop, Layout, Server } from "lucide-react";
 import {
   FaGithub,
   FaJava,
@@ -124,5 +124,32 @@ export const projects = [
     image: "/projects/taskmanager.png",
     github: "https://github.com/KattaGovardhan/task-manager",
     live: "https://taskmanager.com",
+  },
+];
+
+export const services = [
+  {
+    title: "App Development",
+    description:
+      "Building high-quality mobile applications for iOS and Android with smooth performance and modern features.",
+    icon: <Smartphone size={32} />,
+  },
+  {
+    title: "Web Development",
+    description:
+      "Creating responsive, fast, and scalable websites and web applications using modern technologies.",
+    icon: <Laptop size={32} />,
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Designing intuitive and visually appealing interfaces to provide the best user experience.",
+    icon: <Layout size={32} />,
+  },
+  {
+    title: "API Integration",
+    description:
+      "Seamlessly integrating third-party APIs to extend functionality and streamline processes.",
+    icon: <Server size={32} />,
   },
 ];
