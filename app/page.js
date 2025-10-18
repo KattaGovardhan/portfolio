@@ -1,4 +1,5 @@
 import About from "@/components/sections/About";
+import Contact from "@/components/sections/Contact";
 import Home from "@/components/sections/Home";
 import Projects from "@/components/sections/Projects";
 import Services from "@/components/sections/Service";
@@ -12,6 +13,7 @@ export default function page() {
       <Skills />
       <Projects />
       <Services />
+      <Contact />
     </section>
   );
 }
