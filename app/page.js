@@ -1,7 +1,9 @@
+import Home from "@/components/sections/Home";
+
 export default function page() {
   return (
     <section>
-      <p>hello</p>
+      <Home />
     </section>
   );
 }
