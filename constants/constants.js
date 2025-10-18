@@ -47,31 +47,31 @@ export const socialLinks = [
 ];
 
 export const processSteps = [
-    {
-      step: "01",
-      title: "Planning & Research",
-      desc: "Understand client requirements, define goals, and choose the right technologies to ensure scalability and performance.",
-      icon: <FiSearch className="w-6 h-6" />,
-    },
-    {
-      step: "02",
-      title: "Design & Prototyping",
-      desc: "Create modern, responsive UI/UX using Figma and Tailwind CSS, ensuring accessibility and visual consistency.",
-      icon: <FiLayout className="w-6 h-6" />,
-    },
-    {
-      step: "03",
-      title: "Development",
-      desc: "Build full-stack applications using Next.js, Node.js, Express, and MongoDB with clean, modular, and reusable code.",
-      icon: <FiCode className="w-6 h-6" />,
-    },
-    {
-      step: "04",
-      title: "Testing & Deployment",
-      desc: "Thoroughly test for bugs, optimize for performance, and deploy using Vercel, Render, or AWS with CI/CD pipelines.",
-      icon: <FiCheckCircle className="w-6 h-6" />,
-    },
-  ];
+  {
+    step: "01",
+    title: "Planning & Research",
+    desc: "Understand client requirements, define goals, and choose the right technologies to ensure scalability and performance.",
+    icon: <FiSearch className="w-6 h-6" />,
+  },
+  {
+    step: "02",
+    title: "Design & Prototyping",
+    desc: "Create modern, responsive UI/UX using Figma and Tailwind CSS, ensuring accessibility and visual consistency.",
+    icon: <FiLayout className="w-6 h-6" />,
+  },
+  {
+    step: "03",
+    title: "Development",
+    desc: "Build full-stack applications using Next.js, Node.js, Express, and MongoDB with clean, modular, and reusable code.",
+    icon: <FiCode className="w-6 h-6" />,
+  },
+  {
+    step: "04",
+    title: "Testing & Deployment",
+    desc: "Thoroughly test for bugs, optimize for performance, and deploy using Vercel, Render, or AWS with CI/CD pipelines.",
+    icon: <FiCheckCircle className="w-6 h-6" />,
+  },
+];
 
 export const skills = [
   { name: "Java", icon: <FaJava /> },
@@ -92,3 +92,37 @@ export const skills = [
   { name: "Python", icon: <FaPython /> },
 ];
 
+export const projects = [
+  {
+    title: "Portfolio Website",
+    desc: "A modern portfolio website to showcase my skills and projects built with Next.js and Tailwind CSS.",
+    tech: ["Next.js", "Tailwind CSS", "React"],
+    image: "/projects/portfolio.png",
+    github: "https://github.com/KattaGovardhan/portfolio",
+    live: "https://yourportfolio.com",
+  },
+  {
+    title: "E-Commerce App",
+    desc: "Full-stack e-commerce application with user authentication, product management, and payment integration.",
+    tech: ["Next.js", "Node.js", "MongoDB", "Stripe"],
+    image: "/projects/ecommerce.png",
+    github: "https://github.com/KattaGovardhan/ecommerce-app",
+    live: "https://ecommerceapp.com",
+  },
+  {
+    title: "Chat Application",
+    desc: "Real-time chat application using WebSockets with rooms and private messaging features.",
+    tech: ["React", "Node.js", "Socket.io"],
+    image: "/projects/chatapp.png",
+    github: "https://github.com/KattaGovardhan/chat-app",
+    live: "https://chatapp.com",
+  },
+  {
+    title: "Task Manager",
+    desc: "A productivity app to manage tasks, deadlines, and priorities with full CRUD operations.",
+    tech: ["Next.js", "Node.js", "MongoDB"],
+    image: "/projects/taskmanager.png",
+    github: "https://github.com/KattaGovardhan/task-manager",
+    live: "https://taskmanager.com",
+  },
+];
