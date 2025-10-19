@@ -1,28 +1,29 @@
-import { Home, User, Code, Folder, Settings, Mail, Smartphone, Laptop, Layout, Server } from "lucide-react";
 import {
-  FaGithub,
-  FaJava,
-  FaLinkedin,
-  FaReact,
-  FaNodeJs,
-  FaPython,
-  FaGitAlt,
-  FaHtml5,
-  FaCss3Alt,
-} from "react-icons/fa";
+  Home,
+  User,
+  Code,
+  Folder,
+  Settings,
+  Mail,
+  Smartphone,
+  Globe,
+  Rocket,
+} from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {
-  SiJavascript,
   SiLeetcode,
-  SiTypescript,
   SiNextdotjs,
   SiMongodb,
   SiTailwindcss,
   SiExpress,
-  SiMysql,
   SiPostman,
-  SiGithub,
+  SiReact,
+  SiNodedotjs,
+  SiGit,
 } from "react-icons/si";
 import { FiSearch, FiLayout, FiCode, FiCheckCircle } from "react-icons/fi";
+import { VscVscode } from "react-icons/vsc";
+
 export const navLinks = [
   { name: "Home", href: "#", icon: <Home size={16} /> },
   { name: "About", href: "#about", icon: <User size={16} /> },
@@ -74,23 +75,23 @@ export const processSteps = [
 ];
 
 export const skills = [
-  { name: "Java", icon: <FaJava /> },
-  { name: "JavaScript", icon: <SiJavascript /> },
-  { name: "TypeScript", icon: <SiTypescript /> },
-  { name: "React.js", icon: <FaReact /> },
-  { name: "Next.js", icon: <SiNextdotjs /> },
-  { name: "Node.js", icon: <FaNodeJs /> },
-  { name: "Express.js", icon: <SiExpress /> },
-  { name: "MongoDB", icon: <SiMongodb /> },
-  { name: "MySQL", icon: <SiMysql /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss /> },
-  { name: "HTML5", icon: <FaHtml5 /> },
-  { name: "CSS3", icon: <FaCss3Alt /> },
-  { name: "Git", icon: <FaGitAlt /> },
-  { name: "GitHub", icon: <SiGithub /> },
-  { name: "Postman", icon: <SiPostman /> },
-  { name: "Python", icon: <FaPython /> },
+  // Frontend
+  { name: "React.js", icon: <SiReact />, category: "Frontend" },
+  { name: "Next.js", icon: <SiNextdotjs />, category: "Frontend" },
+  { name: "Tailwind CSS", icon: <SiTailwindcss />, category: "Frontend" },
+
+  // Backend
+  { name: "Node.js", icon: <SiNodedotjs />, category: "Backend" },
+  { name: "Express.js", icon: <SiExpress />, category: "Backend" },
+  { name: "MongoDB", icon: <SiMongodb />, category: "Backend" },
+
+  // Tools
+  { name: "Git", icon: <SiGit />, category: "Tools" },
+  { name: "VS Code", icon: <VscVscode />, category: "Tools" },
+  { name: "Postman", icon: <SiPostman />, category: "Tools" },
 ];
+
+export const projectCategories = ["All", "Web", "App"];
 
 export const projects = [
   {
@@ -108,6 +109,7 @@ export const projects = [
     image: "/projects/ecommerce.png",
     github: "https://github.com/KattaGovardhan/ecommerce-app",
     live: "https://ecommerceapp.com",
+    category: "Web",
   },
   {
     title: "Chat Application",
@@ -116,6 +118,7 @@ export const projects = [
     image: "/projects/chatapp.png",
     github: "https://github.com/KattaGovardhan/chat-app",
     live: "https://chatapp.com",
+    category: "Web",
   },
   {
     title: "Task Manager",
@@ -124,32 +127,33 @@ export const projects = [
     image: "/projects/taskmanager.png",
     github: "https://github.com/KattaGovardhan/task-manager",
     live: "https://taskmanager.com",
+    category: "Web",
   },
 ];
 
 export const services = [
   {
-    title: "App Development",
+    icon: <Code size={32} />,
+    title: "Full Stack Development",
     description:
-      "Building high-quality mobile applications for iOS and Android with smooth performance and modern features.",
+      "Building robust web applications with modern frameworks like Next.js, Node.js, and MongoDB.",
+  },
+  {
     icon: <Smartphone size={32} />,
-  },
-  {
-    title: "Web Development",
+    title: "Mobile App Development",
     description:
-      "Creating responsive, fast, and scalable websites and web applications using modern technologies.",
-    icon: <Laptop size={32} />,
+      "Creating responsive and high-performing apps using React Native and Expo for Android and iOS.",
   },
   {
-    title: "UI/UX Design",
-    description:
-      "Designing intuitive and visually appealing interfaces to provide the best user experience.",
-    icon: <Layout size={32} />,
-  },
-  {
+    icon: <Globe size={32} />,
     title: "API Integration",
     description:
-      "Seamlessly integrating third-party APIs to extend functionality and streamline processes.",
-    icon: <Server size={32} />,
+      "Developing and integrating secure REST and GraphQL APIs for seamless data communication.",
+  },
+  {
+    icon: <Rocket size={32} />,
+    title: "Deployment & Optimization",
+    description:
+      "Deploying apps with CI/CD pipelines and optimizing performance for fast, reliable user experiences.",
   },
 ];

@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { motion } from "framer-motion";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -13,9 +14,7 @@ export default function ContactSection() {
   const [success, setSuccess] = useState(null);
   const [error, setError] = useState(null);
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -52,14 +51,24 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className=" text-gray-100 py-20 px-5 md:px-20">
+    <motion.section
+      id="contact"
+      className="text-gray-100 py-20 px-5 md:px-20"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7 }}
+      viewport={{ once: true }}
+    >
       <h2 className="text-4xl font-bold mb-10 text-center">Get in Touch</h2>
 
       <div className="max-w-3xl mx-auto">
-        <Card className=" shadow-lg border-gray-700 hover:shadow-xl transition-shadow">
+        <Card className="shadow-lg border-gray-700 hover:shadow-xl transition-shadow">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl">Contact Me</CardTitle>
-            <CardDescription>Fill out the form below and I will get back to you promptly.</CardDescription>
+            <CardDescription>
+              Fill out the form below and I will get back to you promptly.
+            </CardDescription>
+            <p className="text-gray-400 mt-2">📍 Based in Hyderabad, India</p>
           </CardHeader>
 
           <CardContent>
@@ -72,9 +81,9 @@ export default function ContactSection() {
                   type="text"
                   value={formData.name}
                   onChange={handleChange}
-                  placeholder="Your Name"
+                  placeholder="John Doe"
                   required
-                  className="focus:border-gray-400 focus:ring-gray-400"
+                  className="focus:border-gray-400 focus:ring-gray-400 px-4 py-2"
                 />
               </div>
 
@@ -86,9 +95,9 @@ export default function ContactSection() {
                   type="email"
                   value={formData.email}
                   onChange={handleChange}
-                  placeholder="your@email.com"
+                  placeholder="you@example.com"
                   required
-                  className="focus:border-gray-400 focus:ring-gray-400"
+                  className="focus:border-gray-400 focus:ring-gray-400 px-4 py-2"
                 />
               </div>
 
@@ -102,7 +111,7 @@ export default function ContactSection() {
                   placeholder="Your message..."
                   rows={5}
                   required
-                  className="focus:border-gray-400 focus:ring-gray-400"
+                  className="focus:border-gray-400 focus:ring-gray-400 px-4 py-2"
                 />
               </div>
 
@@ -120,6 +129,6 @@ export default function ContactSection() {
           </CardContent>
         </Card>
       </div>
-    </section>
+    </motion.section>
   );
 }
