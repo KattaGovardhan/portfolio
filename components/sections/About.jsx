@@ -45,7 +45,7 @@ export default function About() {
             Development
           </p>
           <p className="text-gray-300 leading-relaxed">
-            I'm Govardhan, a passionate Software Developer based in Tokyo. I
+            I'm Govardhan, a passionate Software Developer based in India. I
             specialize in building modern, responsive web and mobile
             applications using{" "}
             <span className="text-blue-400 font-semibold">Next.js</span>,
