@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { motion, useScroll } from "framer-motion";
-import { navLinks } from "@/constants/constants";
+import { navLinks } from "@/constants/navLinks";
 import { Resume } from "./Buttons/Resume";
 
 export default function Navbar() {

@@ -2,9 +2,8 @@
 
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
-import ContactMe from "../Buttons/ContactMe";
-import { Resume } from "../Buttons/Resume";
 import { ArrowDown } from "lucide-react";
+import ButtonGround from "../Buttons/ButtonGroup";
 
 export default function Home() {
   return (
@@ -66,8 +65,7 @@ export default function Home() {
         transition={{ delay: 0.6, duration: 0.8 }}
         className="flex gap-4"
       >
-        <Resume />
-        <ContactMe />
+        <ButtonGround />
       </motion.div>
 
       {/* Scroll Indicator */}

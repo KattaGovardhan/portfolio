@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { processSteps } from "@/constants/constants";
+import { processSteps } from "@/constants/processSteps";
 
 export default function DevelopmentProcess() {
   return (

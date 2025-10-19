@@ -1,13 +1,16 @@
 "use client";
 
-import { skills } from "@/constants/constants";
+import { skills } from "@/constants/skills";
 import { motion } from "framer-motion";
 
 export default function Skills() {
   // Group skills by category
   const groupedSkills = {
+    Languages: skills.filter((s) => s.category === "Programming Languages"),
     Frontend: skills.filter((s) => s.category === "Frontend"),
     Backend: skills.filter((s) => s.category === "Backend"),
+    Database: skills.filter((s) => s.category === "Database"),
+    Cloud: skills.filter((s) => s.category === "Cloud"),
     Tools: skills.filter((s) => s.category === "Tools"),
   };
 

@@ -9,7 +9,7 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { services } from "@/constants/constants";
+import { services } from "@/constants/services";
 
 export default function Services() {
   return (
