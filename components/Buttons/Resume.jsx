@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export const Resume = ({
   fullWidth = false,
-  resumeUrl = "/Govardhan_Katta_Resume.pdf",
+  resumeUrl = "/Govardhan_katta_Resume.pdf",
 }) => {
   const handleOpenResume = () => {
     if (resumeUrl) {
