@@ -16,4 +16,12 @@ export const projects = [
       "https://github.com/KattaGovardhan/Skin-Cancer-Detection-using-Deep-Learning.git",
     live: "https://github.com/KattaGovardhan/Skin-Cancer-Detection-using-Deep-Learning.git",
   },
+  {
+    title: "Weather App",
+    desc: "A web application that provides real-time weather information for any location using a third-party API.",
+    tech: ["React", "TypeScript", "Axios", "OpenWeather"],
+    image: "/project3.png",
+    github: "https://github.com/KattaGovardhan/weather-app.git",
+    live: "https://govardhan-weather-app.vercel.app/",
+  },
 ];
