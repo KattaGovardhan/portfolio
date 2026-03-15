@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Govardhan Portfolio",
   description: "Software Developer Portfolio of Govardhan",
+  verification: {
+    google: "DlV3aUhbcciePh0JBbQyVVGC4WQHhkPhHSTtPOVdQtA",
+  },
 };
 
 export default function RootLayout({ children }) {
